@@ -2,7 +2,7 @@ A = [[0 for i in range(3)] for j in range(3)]
  
 for i in range(3):
     for j in range(3):
-        A[i][j] = int(input("Saisir un élement : "))
+        A[i][j] = int(input("Enter an element : "))
         print("----------------------------------")
 print(A)
 x = True
@@ -15,6 +15,6 @@ for i in range(3):
                 break
 print("----------------------------------")
 if x:
-    print(" matrice triangulaire supérieure.")
+    print("Upper triangular matrix .")
 else:
-    print(" matrice n'est pas triangulaire supérieure.")
+    print("Matrix is not upper triangular .")
