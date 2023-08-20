@@ -1,0 +1,20 @@
+A = [[0 for i in range(3)] for j in range(3)]
+ 
+for i in range(3):
+    for j in range(3):
+        A[i][j] = int(input("Saisir un élement : "))
+        print("----------------------------------")
+print(A)
+x = True
+
+for i in range(3):
+    for j in range(3):
+        if i > j:
+            if(A[i][j] != 0):
+                x = False
+                break
+print("----------------------------------")
+if x:
+    print(" matrice triangulaire supérieure.")
+else:
+    print(" matrice n'est pas triangulaire supérieure.")
